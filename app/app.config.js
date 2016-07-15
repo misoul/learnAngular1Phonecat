@@ -16,3 +16,14 @@ angular.
         otherwise('/phones');
     }
   ]);
+
+angular.
+  module('phonecatApp').
+  factory('strHelpers', [
+    function () {
+      return {
+        snippingStr: function(str) {
+          return str.substring(1,20) + "...";
+        }
+      }
+  }])

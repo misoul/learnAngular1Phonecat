@@ -11,6 +11,13 @@ Each tagged commit is a separate lesson teaching a single aspect of the framewor
 
 The full tutorial can be found at https://docs.angularjs.org/tutorial.
 
+### Command Summaries
+The project is preconfigured with a number of npm helper scripts to make it easy to run the common tasks that you will need while developing:
+
+- npm start: Start a local development web server.
+- npm test: Start the Karma unit test runner.
+- npm run protractor: Run the Protractor end-to-end (E2E) tests.
+- npm run update-webdriver: Install the drivers needed by Protractor.
 
 ## Prerequisites
 
@@ -189,7 +196,7 @@ it whenever you like.
 ### Running the Application during Development
 
 - Run `npm start`.
-- Navigate your browser to [http://localhost:8000/](http://localhost:8000/) to see the application 
+- Navigate your browser to [http://localhost:8000/](http://localhost:8000/) to see the application
 - running.
 
 ### Unit Testing
@@ -213,7 +220,7 @@ _Running the Application during Development_ section, above.
 - Serve the application with: `npm start`
 - In a separate terminal/command line window run the e2e tests: `npm run protractor`.
 - Protractor will execute the e2e test scripts against the web application itself. The project is
-  set up to run the tests on Chrome directly. If you want to run against other browsers, you must 
+  set up to run the tests on Chrome directly. If you want to run against other browsers, you must
   modify the configuration at `e2e-tests/protractor-conf.js`.
 
 
