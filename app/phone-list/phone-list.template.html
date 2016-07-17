@@ -27,7 +27,14 @@
             <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
           </a>
           <a href="#!/phones/{{phone.id}}">{{phone.name}}</a>
-          <p>{{phone.snippet}}</p>
+          <p ng-mouseover=fullSnippet()>{{phone.snippet | limitTo:20}}</p>
+          <div ng-cloak>
+            <md-button class="md-icon-button" aria-label="refresh">
+              <md-tooltip md-direction="left">{{phone.snippet | limitTo:20}}</md-tooltip>
+              <md-icon md-svg-src="img/button.svg" style="width: 24px; height: 24px;">
+              </md-icon>
+            </md-button>
+          </div>
         </li>
       </ul>
 

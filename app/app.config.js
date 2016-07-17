@@ -1,8 +1,7 @@
 'use strict';
 
-angular.
-  module('phonecatApp').
-  config(['$locationProvider' ,'$routeProvider',
+angular.module('phonecatApp').
+  config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
@@ -16,14 +15,3 @@ angular.
         otherwise('/phones');
     }
   ]);
-
-angular.
-  module('phonecatApp').
-  factory('strHelpers', [
-    function () {
-      return {
-        snippingStr: function(str) {
-          return str.substring(1,20) + "...";
-        }
-      }
-  }])
