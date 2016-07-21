@@ -18,6 +18,7 @@ The project is preconfigured with a number of npm helper scripts to make it easy
 - npm test: Start the Karma unit test runner.
 - npm run protractor: Run the Protractor end-to-end (E2E) tests.
 - npm run update-webdriver: Install the drivers needed by Protractor.
+- nodemon ./server.js: to use in place of http-server (or 'npm start')
 
 ## Prerequisites
 
