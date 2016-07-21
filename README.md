@@ -14,11 +14,11 @@ The full tutorial can be found at https://docs.angularjs.org/tutorial.
 ### Command Summaries
 The project is preconfigured with a number of npm helper scripts to make it easy to run the common tasks that you will need while developing:
 
-- npm start: Start a local development web server.
+- npm start: Start a local development web server. Then navigate to http://localhost:8000
 - npm test: Start the Karma unit test runner.
 - npm run protractor: Run the Protractor end-to-end (E2E) tests.
 - npm run update-webdriver: Install the drivers needed by Protractor.
-- nodemon ./server.js: to use in place of http-server (or 'npm start')
+- nodemon ./server.js: to use in place of http-server (or 'npm start'). Then navigate to http://localhost:3000/app
 
 ## Prerequisites
 

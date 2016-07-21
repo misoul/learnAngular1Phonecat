@@ -17,13 +17,13 @@ exports.get = function(req, res) {
   res.jsonp(loadJsonFromDisk(PHONE_DIR + id));
 };
 
-exports.getImage = function(req, res) {
+exports.getImage = function(req, res) { // Currently unused
   var id = req.params.imageId;
   console.log('getImage: ' + id);
   res.jsonp(EMPLOYEE_1);
 };
 
-exports.findAll = function(req, res) {
+exports.findAll = function(req, res) { // Currently unused
   console.log(req.params);
   res.jsonp(phonelist);
 };

@@ -31,6 +31,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "fs": "0.0.2",
-    "mongodb": "^2.1.6"
+    "mongodb": "^2.1.6",
+    "paint-console": "0.0.1"
   }
 }
