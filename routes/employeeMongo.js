@@ -1,7 +1,6 @@
 /* From: https://github.com/ccoenraets/directory-rest-nodejs */
-require('paint-console');
 
-exports.registerRoutes = function(app) {
+exports.initConnection = function(registerFunc) {
   console.log("Trying to registerRoutes");
 
   var MongoClient = require('mongodb').MongoClient;
@@ -53,9 +52,7 @@ exports.registerRoutes = function(app) {
         });
       };
 
-      app.get('/employees/:id/reports', findByManager);
-      app.get('/employees/:id', findById);
-      app.get('/employees', findAll);
+      registerFunc( {findByManager, findById, findAll} )
     });
   });
 }
