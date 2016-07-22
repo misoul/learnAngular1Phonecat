@@ -9,7 +9,6 @@ exports.registerRoutes = function(app) {
   const EMPLOYEE_COLLECTION = "employees";
 
   MongoClient.connect(MONGO_URL, function(err, db) {
-    console.log("MongoClient created");
     if (err) { return console.error(err); }
 
     var employees = db.collection(EMPLOYEE_COLLECTION, {strict:true}, function(err, collection) {
